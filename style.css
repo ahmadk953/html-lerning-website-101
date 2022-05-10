@@ -1,0 +1,162 @@
+/* Setting proporty's to the body (where almst all of the content is) */
+body {
+  background: lightblue;
+  margin: 0;
+  font-family: "Sorce Sans Pro", sans-serif;
+  display: grid;
+  place-content: center;
+  align-content: center;
+  color: black;
+}
+/* Bolding anything that has the "h1" tag */
+h1 {
+  font-weight: blod;
+}
+/* Set core root defaults */
+#countdown-container {
+  display: inline-block; /*displays divs on a line*/
+  width: 280x; /*gives the div element a width of 300px*/
+  margin: 20px 0; /*gives 20px space at the top and bottom of the div element*/
+  border-radius: 5px; /*curves the edges of the div element by 5px;*/
+  background: skyblue; /*gives the div element a background color*/
+}
+#countdown {
+  font-family: "Fira Sans", sans-serif; /*changes the text font in the divelement */
+  display: inline-block; /*displays divs on a line*/
+  padding: 30px; /*creates 30px space between the content of the div element and the walls of the div element*/
+  background: skyblue;
+  color: white; /*changes the text color in the div element*/
+}
+
+#countdown span {
+  font-weight: bold; /*boldens text in the span element*/
+  font-size: 30px; /*changes the text size in the span element*/
+}
+/* Skip to main content (coming soon) 
+
+skip-nav-link {
+  position: absolute;
+  transform: translateY(-10000000%);
+}
+skip-nav-link:focus {
+  transform: translateY(0);
+}
+*/
+about {
+  font-weight: bolder;
+  color: black;
+  font-size: 18px;
+}
+nav {
+  font-weight: bold;
+  font-size: large;
+  background: fixed;
+  background-color: lightsalmon;
+  text-align: center;
+  word-spacing: 10px;
+}
+:root {
+  --typewriterspeed: 6s;
+  --blinkspeed: 750ms;
+  --clr-neon: hsl(17, 100%, 74%);
+  scroll-behavior: smooth;
+  /*color-scheme: dark;*/
+}
+home_page_header1 {
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+}
+home_page_header1::before,
+home_page_header1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+home_page_header1::before {
+  background: lightblue;
+  animation: typewriter var(--typewriterspeed) steps(9) 1s forwards;
+}
+home_page_header1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterspeed) steps(9) 1s forwards,
+    blink var(--blinkspeed) steps(9) infinite;
+}
+home_page_header2 {
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+}
+home_page_header2::before,
+home_page_header2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+home_page_header2::before {
+  background: lightblue;
+  animation: typewriter var(--typewriterspeed) steps(27) 1s forwards;
+}
+home_page_header2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterspeed) steps(27) 1s forwards,
+    blink var(--blinkspeed) steps(27) infinite;
+}
+.indexhtml_content {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterspeed) + 2s) forwards;
+}
+.indexhtml_headers {
+  text-align: center;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+  home_page_header2::before {
+    background: black;
+  }
+  home_page_header1::before {
+    background: black;
+  }
+}
+*/
+.neon-button {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0, 0%, 100% / 0.5), 0 0 0.125em currentColor;
+}

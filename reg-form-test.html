@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+  </head>
+  <nav>
+    <a href="index.html">Home</a> <a href="about.html">About</a>
+    <a href="reg-form-test.html">Test Registration Form</a>
+  </nav>
+  <body>
+    <link href="registration.css" type="text/css" rel="stylesheet" />
+    <link href="sql-script.sql" type="sql-script" rel="sql-script" />
+    <link href="data_base.php" type="php" rel="php-script" />
+    <h2>Sign Up</h2>
+    <form
+      name="form1"
+      action="data_base.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div class="container">
+        <div class="form_group">
+          <label>First Name:</label>
+          <input type="text" name="fname" value="" required id="first_name" />
+        </div>
+        <div class="form_group">
+          <label>Middle Name:</label>
+          <input type="text" name="mname" value="" required id="middle_name" />
+        </div>
+        <div class="form_group">
+          <label>Last Name:</label>
+          <input type="text" name="lname" value="" required id="last_name" />
+        </div>
+        <div class="form_group">
+          <label>Password:</label>
+          <input type="password" name="pwd" value="" required id="password" />
+        </div>
+        <button onclick="exec('php data_base.php');">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
