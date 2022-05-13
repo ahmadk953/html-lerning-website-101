@@ -1,7 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/e8b63656-f7f7-47b6-8598-8e9236533995/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/mthtmllearningwebsite101",
-    "appService.deploySubpath": ".azurewebapp-deployment",
-    "cSpell.enableFiletypes": [
-        "xml"
-    ]
-}
