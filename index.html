@@ -23,8 +23,22 @@
     <a href="#maincontent">
         Skip Navagation
     </a>
-    <nav>
-        <a href="index.html">Home</a> <a href="about.html">About</a> <a href="reg-form-test.html">Test Registration Form</a> <a href="pyscript.html">Test pyscript</a>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a> 
+                <li class="testpages">
+                    <a href="/">Test Pages</a>
+                    <ul class="dropdown-1">
+                        <li><a href="reg-form-test.html">Test Registration Form</a></li> 
+                        <li><a href="pyscript.html">Test pyscript</a></li>
+                    </ul> 
+                </li>
+            </div>
+        </ul>
     </nav>
     
     <body>

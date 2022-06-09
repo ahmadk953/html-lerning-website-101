@@ -1,13 +1,108 @@
 /* Setting proporty's to the body (where almst all of the content is) */
 body {
   background: lightblue;
-  margin: 0;
   font-family: "Sorce Sans Pro", sans-serif;
   display: grid;
   place-content: center;
   align-content: center;
   color: black;
 }
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: salmon;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: salmon;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+ /* DROPDOWN MENU */
+ .testpages {
+  position: relative; 
+ }
+ .dropdown {
+  background-color: rgb(209, 103, 92);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+ .dropdown li + li {
+  margin-top: 10px;
+ }
+ .dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+ .dropdown li:hover {
+  background-color: rgb(209, 103, 92);
+ }
+ .testpages:hover .dropdown {
+  display: block;
+ }
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:salmon;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:rgb(209, 103, 92);
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ .dropdown {
+  left: 50%;
+  top: 30px;
+  transform: translateX(35%);
+ }
+ .dropdown li:hover {
+  background-color: rgb(209, 103, 92);
+ }
+ }
 /* Bolding anything that has the "h1" tag */
 h1 {
   font-weight: blod;
@@ -47,7 +142,7 @@ about {
   color: black;
   font-size: 18px;
 }
-nav {
+/* nav {
   font-weight: bold;
   font-size: large;
   background: fixed;
@@ -55,12 +150,22 @@ nav {
   text-align: center;
   word-spacing: 10px;
 }
+*/
 :root {
   --typewriterspeed: 6s;
   --blinkspeed: 750ms;
   --clr-neon: hsl(17, 100%, 74%);
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   /*color-scheme: dark;*/
+}
+a {
+  text-decoration: none;
+}
+ li {
+  list-style: none;
 }
 home_page_header1 {
   font-family: "Source Code Pro", monospace;
