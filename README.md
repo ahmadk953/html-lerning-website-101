@@ -1,4 +1,4 @@
-# My HTMl Lerning Website
+# My HTML Lerning Website
 ## About
 This is my html learning website. You can use this as a template repo.
 The "Dev" branch is updated when I make a new change to my website. The "Main" branch is updated when the "Dev" branch is fully stable.
