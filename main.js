@@ -56,3 +56,21 @@ var x = setInterval(() => {
   tempSeconds = totalSeconds;
 }, 1000);
 //end of timer code
+// Start of ripple button code
+const RippleButton = document.querySelector('.ripple-button');
+
+function mousePositionToCustomProp(event, element) {
+  let posX = event.offsetX;
+  let posY = event.offsetY;
+
+  element.style.setProperty('--x', posX + 'px');
+  element.style.setProperty('--y', posY + 'px');
+}
+
+RippleButton.addEventListener('click', (e) => {
+  mousePositionToCustomProp(e, RippleButton);
+  RippleButton.classList.add('pulse');
+  RippleButton.addEventListener('animationend', () => {
+    RippleButton.classList.remove('pulse');
+  });
+})
