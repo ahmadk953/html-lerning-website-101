@@ -299,3 +299,31 @@ home_page_header2::after {
     opacity: 0;
   }
 }
+.alert-button {
+  display: inline-grid;
+  place-items: center;
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  isolation: isolate;
+  appearance: none;
+  background-color: transparent;
+  color: salmon;
+  border: 5px solid currentColor;
+  border-radius: 0.125em;
+  overflow: hidden;
+}
+.alert-button::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms;
+  z-index: -1;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+}

@@ -74,3 +74,16 @@ RippleButton.addEventListener('click', (e) => {
     RippleButton.classList.remove('pulse');
   });
 })
+// End of ripple button code
+// Start of alert button code
+const AlertButton = document.querySelector('.alert-button');
+
+AlertButton.addEventListener('click', (e) => {
+  mousePositionToCustomProp(e, AlertButton);
+  AlertButton.classList.add('pulse');
+  AlertButton.addEventListener('animationend', () => {
+    AlertButton.classList.remove('pulse');
+  });
+  alert('This is an alert. Just like you asked.');
+})
+// End of alert button code
