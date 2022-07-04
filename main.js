@@ -57,33 +57,33 @@ var x = setInterval(() => {
 }, 1000);
 //end of timer code
 // Start of ripple button code
-const RippleButton = document.querySelector('.ripple-button');
+const RippleButton = document.querySelector(".ripple-button");
 
 function mousePositionToCustomProp(event, element) {
   let posX = event.offsetX;
   let posY = event.offsetY;
 
-  element.style.setProperty('--x', posX + 'px');
-  element.style.setProperty('--y', posY + 'px');
+  element.style.setProperty("--x", posX + "px");
+  element.style.setProperty("--y", posY + "px");
 }
 
-RippleButton.addEventListener('click', (e) => {
+RippleButton.addEventListener("click", (e) => {
   mousePositionToCustomProp(e, RippleButton);
-  RippleButton.classList.add('pulse');
-  RippleButton.addEventListener('animationend', () => {
-    RippleButton.classList.remove('pulse');
+  RippleButton.classList.add("pulse");
+  RippleButton.addEventListener("animationend", () => {
+    RippleButton.classList.remove("pulse");
   });
-})
+});
 // End of ripple button code
 // Start of alert button code
-const AlertButton = document.querySelector('.alert-button');
+const AlertButton = document.querySelector(".alert-button");
 
-AlertButton.addEventListener('click', (e) => {
+AlertButton.addEventListener("click", (e) => {
   mousePositionToCustomProp(e, AlertButton);
-  AlertButton.classList.add('pulse');
-  AlertButton.addEventListener('animationend', () => {
-    AlertButton.classList.remove('pulse');
+  AlertButton.classList.add("pulse");
+  AlertButton.addEventListener("animationend", () => {
+    AlertButton.classList.remove("pulse");
   });
-  alert('This is an alert. Just like you asked.');
-})
+  alert("This is an alert. Just like you asked.");
+});
 // End of alert button code

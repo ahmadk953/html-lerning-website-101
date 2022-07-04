@@ -36,7 +36,7 @@ body {
 }
 /* DROPDOWN MENU */
 .testpages {
-  position: relative; 
+  position: relative;
 }
 .dropdown {
   background-color: rgb(209, 103, 92);
@@ -60,10 +60,10 @@ body {
 .testpages:hover .dropdown {
   display: block;
 }
-* CHECKBOX HACK */
-nput[type=checkbox]{
+/* CHECKBOX HACK */
+nput[type="checkbox"] {
   display: none;
-} 
+}
 /*HAMBURGER MENU*/
 .hamburger {
   display: none;
@@ -73,10 +73,10 @@ nput[type=checkbox]{
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-  .menu { 
-    display:none;
+  .menu {
+    display: none;
     position: absolute;
-    background-color:salmon;
+    background-color: salmon;
     right: 0;
     left: 0;
     text-align: center;
@@ -84,13 +84,13 @@ nput[type=checkbox]{
   }
   .menu li:hover {
     display: inline-block;
-    background-color:rgb(209, 103, 92);
+    background-color: rgb(209, 103, 92);
     transition: 0.3s ease;
   }
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu{
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -105,6 +105,7 @@ nput[type=checkbox]{
     background-color: rgb(209, 103, 92);
   }
 }
+/* END OF NAV BAR STYLING */
 /* Set core root defaults */
 #countdown-container {
   display: inline-block; /*displays divs on a line*/
@@ -161,7 +162,7 @@ a {
   text-decoration: none;
   color: white;
 }
- li {
+li {
   list-style: none;
 }
 home_page_header1 {
