@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type=text/css>
       body {
           background: lightblue;
@@ -125,6 +127,7 @@
           box-sizing: border-box;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Registration Form</title>
   </head>
   <nav class="navbar">
@@ -133,12 +136,13 @@
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <div class="menu">
             <a href="index.html">Home</a> 
-            <a href="about.html">About</a> 
+            <a href="about.html">About</a>
             <li class="testpages">
                 <a href="/">Test Pages</a>
                 <ul class="dropdown-1">
                     <li><a href="reg-form-test.html">Test Registration Form</a></li> 
                     <li><a href="pyscript.html">Test pyscript</a></li>
+                    <li><a href="javascriptgame.html">Test Javascript Game</a> </li>
                 </ul> 
             </li>
         </div>
@@ -172,7 +176,7 @@
           <label>Password:</label>
           <input type="password" name="pwd" value="" required id="password" />
         </div>
-        <button onclick="exec('php data_base.php');">Submit</button>
+        <button onclick="exec('submit.js');" class="submit-button">Submit</button>
       </div>
     </form>
   </body>
