@@ -9,4 +9,3 @@ Here is a link to the preveiw (when I first update the files) version of the web
 ### Alternitive URL's
 
 Perduction: https://htmlwebsite.ahmadsblog.tk
-Preveiw: https://9bce35dc.html-lerning-website-101.pages.dev/
