@@ -18,8 +18,6 @@ body {
     background: lightblue;
     font-family: "Sorce Sans Pro", sans-serif;
     display: grid;
-    place-content: center;
-    align-content: center;
     color: black;
     min-height: 100vh;
 }
