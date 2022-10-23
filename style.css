@@ -328,3 +328,6 @@ home_page_header2::after {
   background: #fff;
   opacity: 0.5;
 }
+.abtHedder{
+  align-items: center;
+}
