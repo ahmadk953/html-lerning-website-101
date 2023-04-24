@@ -9,7 +9,6 @@ Here is a link to the preveiw (when I first update the files) version of the web
 
 ### Alternitive URL's
 
-Production: https://htmlwebsite.ahmadsblog.tk
 <br>
 Production: https://html-learning-website-101.onrender.com/index.html
 <br>
