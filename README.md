@@ -8,8 +8,6 @@ Here is a link to the production version of the website: https://ahmadk953.githu
 Here is a link to the preveiw (when I first update the files) version of the website: https://dev.html-lerning-website-101.pages.dev
 
 ### Alternitive URL's
-
-<br>
 Production: https://html-learning-website-101.onrender.com/index.html
 <br>
 Development: https://myhtmllearningwebsite101.azurewebsites.net/
