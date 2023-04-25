@@ -1,123 +1,169 @@
 /* NAVBAR STYLING STARTS */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: salmon;
-  color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: salmon;
+    color: #fff;
 }
+
 .nav-links a {
-  color: #fff;
+    color: #fff;
 }
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: salmon;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
 /* NAVBAR MENU */
 .menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
 }
-.menu li:hover {
-  background-color: salmon;
-  border-radius: 5px;
-  transition: 0.3s ease;
+
+.menu a:hover {
+    background-color: #ffbab3;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
+
 .menu li {
-  padding: 5px 14px;
+    padding: 5px 14px;
 }
+
 /* DROPDOWN MENU */
 .testpages {
-  position: relative;
+    position: relative;
 }
+
 .dropdown {
-  background-color: rgb(209, 103, 92);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
+    background-color: rgb(209, 103, 92);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
 }
+
 .dropdown li + li {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 .dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
 }
+
 .dropdown li:hover {
-  background-color: rgb(209, 103, 92);
+    background-color: rgb(209, 103, 92);
 }
+
 .testpages:hover .dropdown {
-  display: block;
+    display: block;
 }
+
 /* CHECKBOX HACK */
-nput[type="checkbox"] {
-  display: none;
+input[type="checkbox"] {
+    display: none;
 }
+
 /*HAMBURGER MENU*/
 .hamburger {
-  display: none;
-  font-size: 24px;
-  -webkit-user-select: none;
-  user-select: none;
+    display: none;
+    font-size: 24px;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: salmon;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: rgb(209, 103, 92);
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 12px;
-  }
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-  .dropdown li:hover {
-    background-color: rgb(209, 103, 92);
-  }
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: salmon;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu a:hover {
+        display: inline-block;
+        background-color: rgb(209, 103, 92);
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: rgb(209, 103, 92);
+    }
 }
+
 /* END OF NAV BAR STYLING */
 body {
-  background: lightblue;
-  font-family: "Sorce Sans Pro", sans-serif;
-  display: grid;
-  color: black;
-  min-height: 100vh;
+    background: lightblue;
+    font-family: "Sorce Sans Pro", sans-serif;
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
 }
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
+
 li {
-  list-style: none;
+    list-style: none;
 }
+
 #gameCanvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 #text1 {
-  text-align: left;
-  font-size: 18px;
-  font-family: "Sorce Sans Pro", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Sorce Sans Pro", sans-serif;
 }

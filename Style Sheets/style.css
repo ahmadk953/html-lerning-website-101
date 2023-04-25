@@ -137,7 +137,7 @@ input[type="checkbox"] {
     transform: translateY(0);
 }
 
-about {
+.aboutText1 {
     font-weight: bolder;
     color: black;
     font-size: 18px;
@@ -155,7 +155,6 @@ about {
 :root {
     --typewriterspeed: 6s;
     --blinkspeed: 750ms;
-    --clr-neon: hsl(17, 100%, 74%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -225,7 +224,7 @@ li {
     blink var(--blinkspeed) steps(27) infinite;
 }
 
-.maincontent {
+.indexmaincontent {
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterspeed) + 2s) forwards;
