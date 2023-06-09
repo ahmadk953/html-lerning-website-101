@@ -1,4 +1,6 @@
 # My HTML Lerning Website
+# Important ⚠️
+## **Just to let everyone know ahead of time, I will be permenently re-woking the website and I will slowly start to migrate this project to a Node.js application. Most of the features shoud and will stay the same but some stuff will get re-woked or maybe even removed (ex. php pages). No updates will be published until everything is converted.**
 ## About
 This is my html learning website. You can use this as a template repo.
 The "Dev" branch is updated when I make a new change to my website. The "Main" branch is updated when the "Dev" branch is fully stable.
