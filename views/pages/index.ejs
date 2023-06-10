@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+    <title>My HTML Website - Home Page</title>
+  </head>
+  <a href="#maincontent" class="skip-nav-link"> Skip Navagation </a>
+  <body>
+    <%- include('../partials/navbar') %>
+    <div class="indexhtml_headers">
+      <p></p>
+      <h1 class="home_page_header1">Home Page</h1>
+      <h2 class="home_page_header2">Welcome To My HTML Website!</h2>
+    </div>
+
+    <div class="maincontent" class="indexmaincontent">
+      <main id="maincontent">
+        <button class="ripple-button">Ripple Button - Test</button>
+
+        <button class="alert-button">Click here to get an alert</button>
+
+        <h1>Added some bold text</h1>
+
+        <p id="paragraph1">
+          This is some example text. This is some more text. BLA BLA BLA. Some
+          more stuff... so there is some more random things. some more text and
+          some more text. THIS IS A TEST.
+        </p>
+
+        <iframe
+          id="intel_image"
+          loading="lazy"
+          width="760px"
+          height="500px"
+          src="Images/intelprocesser.jpeg"
+        ></iframe>
+
+        <iframe
+          id="presentation1"
+          width="760px"
+          height="500px"
+          src="https://sway.office.com/s/tOJRrFd5qvWMAXRL/embed"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          max-width="100%"
+          sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts"
+          scrolling="no"
+          style="border: none; max-width: 100%; max-height: 100vh"
+          allowfullscreen
+          mozallowfullscreen
+          msallowfullscreen
+          webkitallowfullscreen
+        ></iframe>
+      </main>
+    </div>
+  </body>
+</html>
