@@ -3,6 +3,7 @@ var express = require("express");
 const ejs = require("ejs");
 var path = require("path");
 const PORT = process.env.PORT || 8080;
+const validator = require('validator');
 // Initialise Express
 var app = express();
 // Render static files
@@ -17,8 +18,9 @@ app.listen(PORT, () => {
 
 // Routes
 app.get("*", (req, res) => {
-  const currentPage = req.path;
-  res.render("pages" + req.url, { currentPage });
+  const currentPage = validator.blacklist(req.path, '<>"\'()&*#%$');
+  console.log('currentPage:', currentPage);
+  res.render("pages" + currentPage, { currentPage });
 });
 app.get("/", function (req, res) {
   res.render("pages/index.ejs", { currentPage: "home" });

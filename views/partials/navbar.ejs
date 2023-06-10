@@ -1,26 +1,26 @@
 <nav class="navbar">
   <div class="topnav" id="myTopnav">
-    <% if (currentPage === '/about.ejs') { %>
+    <% if (currentPage === '/about') { %>
     <a href="/" id="home-page-link">Home</a>
-    <% } else if (currentPage === '/unitygame.ejs') { %>
+    <% } else if (currentPage === '/unitygame') { %>
     <a href="/" id="home-page-link">Home</a>
-    <% } else if (currentPage === '/pyscript.ejs') { %>
+    <% } else if (currentPage === '/pyscript') { %>
     <a href="/" id="home-page-link">Home</a>
-    <% } else if (currentPage === '/javascriptgame.ejs') { %>
+    <% } else if (currentPage === '/javascriptgame') { %>
     <a href="/" id="home-page-link">Home</a>
     <% } else { %>
     <a href="/" class="active" id="home-page-link">Home</a>
 
-    <% } %> <% if (currentPage === '/about.ejs') { %>
-    <a href="unitygame.ejs" id="unity-game-link">Unity Game</a>
-    <% } else if (currentPage === '/unitygame.ejs') { %>
-    <a href="unitygame.ejs" class="active" id="unity-game-link">Unity Game</a>
-    <% } else if (currentPage === '/pyscript.ejs') { %>
-    <a href="unitygame.ejs" id="unity-game-link">Unity Game</a>
-    <% } else if (currentPage === '/javascriptgame.ejs') { %>
-    <a href="unitygame.ejs" id="unity-game-link">Unity Game</a>
+    <% } %> <% if (currentPage === '/about') { %>
+    <a href="unitygame" id="unity-game-link">Unity Game</a>
+    <% } else if (currentPage === '/unitygame') { %>
+    <a href="unitygame" class="active" id="unity-game-link">Unity Game</a>
+    <% } else if (currentPage === '/pyscript') { %>
+    <a href="unitygame" id="unity-game-link">Unity Game</a>
+    <% } else if (currentPage === '/javascriptgame') { %>
+    <a href="unitygame" id="unity-game-link">Unity Game</a>
     <% } else { %>
-    <a href="unitygame.ejs" id="unity-game-link">Unity Game</a>
+    <a href="unitygame" id="unity-game-link">Unity Game</a>
     <% } %>
     <div class="dropdown">
       <button class="dropbtn">
@@ -28,40 +28,40 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <% if (currentPage === '/about.ejs') { %>
-        <a href="pyscript.ejs">Pyscript</a>
-        <% } else if (currentPage === '/unitygame.ejs') { %>
-        <a href="pyscript.ejs">Pyscript</a>
-        <% } else if (currentPage === '/pyscript.ejs') { %>
-        <a class="active" href="pyscript.ejs">Pyscript</a>
-        <% } else if (currentPage === '/javascriptgame.ejs') { %>
-        <a href="pyscript.ejs">Pyscript</a>
+        <% if (currentPage === '/about') { %>
+        <a href="pyscript">Pyscript</a>
+        <% } else if (currentPage === '/unitygame') { %>
+        <a href="pyscript">Pyscript</a>
+        <% } else if (currentPage === '/pyscript') { %>
+        <a class="active" href="pyscript">Pyscript</a>
+        <% } else if (currentPage === '/javascriptgame') { %>
+        <a href="pyscript">Pyscript</a>
         <% } else { %>
-        <a href="pyscript.ejs">Pyscript</a>
+        <a href="pyscript">Pyscript</a>
 
-        <% } %> <% if (currentPage === '/about.ejs') { %>
-        <a href="javascriptgame.ejs">JavaScript Game</a>
-        <% } else if (currentPage === '/unitygame.ejs') { %>
-        <a href="javascriptgame.ejs">JavaScript Game</a>
-        <% } else if (currentPage === '/pyscript.ejs') { %>
-        <a href="javascriptgame.ejs">JavaScript Game</a>
-        <% } else if (currentPage === '/javascriptgame.ejs') { %>
-        <a class="active" href="javascriptgame.ejs">JavaScript Game</a>
+        <% } %> <% if (currentPage === '/about') { %>
+        <a href="javascriptgame">JavaScript Game</a>
+        <% } else if (currentPage === '/unitygame') { %>
+        <a href="javascriptgame">JavaScript Game</a>
+        <% } else if (currentPage === '/pyscript') { %>
+        <a href="javascriptgame">JavaScript Game</a>
+        <% } else if (currentPage === '/javascriptgame') { %>
+        <a class="active" href="javascriptgame">JavaScript Game</a>
         <% } else { %>
-        <a href="javascriptgame.ejs">JavaScript Game</a>
+        <a href="javascriptgame">JavaScript Game</a>
         <% } %>
       </div>
     </div>
-    <% if (currentPage === '/about.ejs') { %>
-    <a id="about-page-link" class="active" href="about.ejs">About</a>
-    <% } else if (currentPage === '/unitygame.ejs') { %>
-    <a id="about-page-link" href="about.ejs">About</a>
-    <% } else if (currentPage === '/pyscript.ejs') { %>
-    <a id="about-page-link" href="about.ejs">About</a>
-    <% } else if (currentPage === '/javascriptgame.ejs') { %>
-    <a id="about-page-link" href="about.ejs">About</a>
+    <% if (currentPage === '/about') { %>
+    <a id="about-page-link" class="active" href="about">About</a>
+    <% } else if (currentPage === '/unitygame') { %>
+    <a id="about-page-link" href="about">About</a>
+    <% } else if (currentPage === '/pyscript') { %>
+    <a id="about-page-link" href="about">About</a>
+    <% } else if (currentPage === '/javascriptgame') { %>
+    <a id="about-page-link" href="about">About</a>
     <% } else { %>
-    <a id="about-page-link" href="about.ejs">About</a>
+    <a id="about-page-link" href="about">About</a>
     <% } %>
     <a href="javascript:void(0);" class="icon" onclick="navbarResponsiveness()"
       >&#9776;</a
