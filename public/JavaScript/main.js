@@ -31,7 +31,7 @@ AlertButton.addEventListener("click", (e) => {
 // End of alert button code
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function navbarResponsiveness() {
-  var x = document.getElementById("myTopnav");
+  const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {

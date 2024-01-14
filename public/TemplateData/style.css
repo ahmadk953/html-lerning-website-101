@@ -1,30 +1,36 @@
 body {
     padding: 0;
-    margin: 0
+    margin: 0;
+    background: lightblue;
+    font-family: "Sorce Sans Pro", sans-serif;
+    display: grid;
+    color: black;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #unity-container {
-    position: absolute
+    position: absolute;
 }
 
 #unity-container.unity-desktop {
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -20%)
+    transform: translate(-50%, -20%);
 }
 
 #unity-container.unity-mobile {
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 #unity-canvas {
-    background: #231F20
+    background: #231F20;
 }
 
 .unity-mobile #unity-canvas {
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 #unity-loading-bar {
@@ -32,13 +38,13 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: none
+    display: none;
 }
 
 #unity-logo {
     width: 154px;
     height: 130px;
-    background: url('unity-logo-dark.png') no-repeat center
+    background: url('unity-logo-dark.png') no-repeat center;
 }
 
 #unity-progress-bar-empty {
@@ -46,44 +52,44 @@ body {
     height: 18px;
     margin-top: 10px;
     margin-left: 7px;
-    background: url('progress-bar-empty-dark.png') no-repeat center
+    background: url('progress-bar-empty-dark.png') no-repeat center;
 }
 
 #unity-progress-bar-full {
     width: 0;
     height: 18px;
     margin-top: 10px;
-    background: url('progress-bar-full-dark.png') no-repeat center
+    background: url('progress-bar-full-dark.png') no-repeat center;
 }
 
 #unity-footer {
-    position: relative
+    position: relative;
 }
 
 .unity-mobile #unity-footer {
-    display: none
+    display: none;
 }
 
 #unity-webgl-logo {
     float: left;
     width: 204px;
     height: 38px;
-    background: url('webgl-logo.png') no-repeat center
+    background: url('webgl-logo.png') no-repeat center;
 }
 
 #unity-build-title {
     float: right;
     margin-right: 10px;
     line-height: 38px;
-    font-family: arial;
-    font-size: 18px
+    font-family: Arial, serif;
+    font-size: 18px;
 }
 
 #unity-fullscreen-button {
     float: right;
     width: 38px;
     height: 38px;
-    background: url('fullscreen-button.png') no-repeat center
+    background: url('fullscreen-button.png') no-repeat center;
 }
 
 #unity-warning {
@@ -93,16 +99,7 @@ body {
     transform: translate(-50%);
     background: white;
     padding: 10px;
-    display: none
-}
-
-body {
-    background: lightblue;
-    font-family: "Sorce Sans Pro", sans-serif;
-    display: grid;
-    color: black;
-    margin: 0 auto;
-    padding: 0;
+    display: none;
 }
 
 :root {
