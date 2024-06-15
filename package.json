@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/ahmadk953/html-lerning-website-101#readme",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
     "js": "^0.1.0",
-    "validator": "^13.11.0"
+    "validator": "^13.12.0"
   }
 }
