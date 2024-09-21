@@ -1,7 +1,7 @@
 # My HTML Lerning Website
 
 > [!WARNING]
-> This project is not being mantained anymore
+> This project is not being mantained anymore and the link to the website may not work anymore.
 
 ## About
 
