@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ahmadk953/html-lerning-website-101#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.1",
+    "express": "^4.21.2",
     "js": "^0.1.0",
     "validator": "^13.12.0"
   }
