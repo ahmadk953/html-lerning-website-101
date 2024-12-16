@@ -14,7 +14,7 @@
     "js": "^0.1.0",
     "validator": "^13.12.0",
     "rate-limiter-flexible": "^5.0.3",
-    "express-rate-limit": "^7.3.1",
+    "express-rate-limit": "^7.5.0",
     "csurf": "^1.11.0",
     "helmet": "^8.0.0"
   }
