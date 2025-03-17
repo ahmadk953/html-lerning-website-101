@@ -16,6 +16,6 @@
     "rate-limiter-flexible": "^6.1.0",
     "express-rate-limit": "^7.5.0",
     "csurf": "^1.11.0",
-    "helmet": "^8.0.0"
+    "helmet": "^8.1.0"
   }
 }
